@@ -414,7 +414,6 @@ a:visited {
     content: "\f105";
 }
 
-
 /* Nav Meu Container */
 
 @media (max-width: 768px) {
@@ -422,8 +421,6 @@ a:visited {
         display: none;
     }
 }
-
-
 
 /* Nav Meu Styling */
 
@@ -484,7 +481,6 @@ a:visited {
     margin-right: 10px;
     margin-top: 0;
 }
-
 
 
 /* Mobile Nav Toggle */
@@ -597,10 +593,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-
 /* ------------------------- TOP SECTION -------------------------- */
-
-#top-section {}
 
 #top-section .container {
     display: grid;
@@ -670,9 +663,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .services {
     padding: 80px 15px;
 }
-
-
-
 
 /* ------------------------- SERVICES -------------------------- */
 
@@ -762,8 +752,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-
-
 
 
 /* ------------------------- PORTFOLIO -------------------------- */
@@ -889,20 +877,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
 }
 
-@media (min-width: 1200px) {
-    .image5 {}
-}
-
 .image6 {
     background: url("images/gif6.gif") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-@media (min-width: 1200px) {
-    .image6 {}
 }
 
 .image7 {
@@ -947,8 +927,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-
-
 
 
 /* ------------------------- EXPERIENCE -------------------------- */
@@ -1211,21 +1189,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-@media (min-width: 1200px) {
-    .info {}
-}
-
 .info-box {
     padding: 15px;
 }
 
 @media (min-width: 768px) {
-    .info-box {
-        padding: 20px;
-    }
-}
-
-@media (min-width: 980px) {
     .info-box {
         padding: 20px;
     }
@@ -1292,21 +1260,6 @@ body.mobile-nav-active #mobile-nav-toggle {
         line-height: 1.5;
     }
 }
-
-@media (min-width: 980px) {
-    .info-box p {
-        line-height: 1.5;
-    }
-}
-
-@media (min-width: 1200px) {
-    .info-box p {
-        line-height: 1.5;
-    }
-}
-
-
-
 
 /* ------------------------- BLOG -------------------------- */
 
