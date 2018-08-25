@@ -1263,6 +1263,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ------------------------- BLOG -------------------------- */
 
+#blog-section {
+    padding: 100px 15px;
+    background-color: #f9fafc;
+}
+
+#blog-section .title h1 {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
 
 /* ------------------------- TESTIMONIALS -------------------------- */
 
