@@ -126,6 +126,7 @@ del {
 
 
 
+
 /* tables still need 'cellspacing="0"' in the markup */
 
 table {
@@ -168,6 +169,7 @@ a:visited {
 
 
 
+
 /* ------------------------- END OF RESET CSS -------------------------- */
 
 * {
@@ -199,6 +201,7 @@ a:visited {
 
 
 
+
 /* ------------------------- TRANSITIONS -------------------------- */
 
 .effect1 {
@@ -224,6 +227,7 @@ a:visited {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
+
 
 
 
@@ -286,6 +290,7 @@ a:visited {
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 
 /* ------------------------- HEADER -------------------------- */
@@ -367,6 +372,7 @@ a:visited {
 
 
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -414,6 +420,7 @@ a:visited {
 
 
 
+
 /* Nav Menu Arrows */
 
 .sf-arrows .sf-with-ul {
@@ -434,6 +441,7 @@ a:visited {
 }
 
 
+
 /* Nav Meu Container */
 
 @media (max-width: 768px) {
@@ -441,6 +449,7 @@ a:visited {
         display: none;
     }
 }
+
 
 
 /* Nav Meu Styling */
@@ -505,6 +514,7 @@ a:visited {
 
 
 
+
 /* Mobile Nav Toggle */
 
 #mobile-nav-toggle {
@@ -535,6 +545,7 @@ a:visited {
         display: none;
     }
 }
+
 
 
 
@@ -602,6 +613,7 @@ a:visited {
 
 
 
+
 /* Mobile Nav body classes */
 
 body.mobile-nav-active {
@@ -615,6 +627,7 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
     color: #fff;
 }
+
 
 
 
@@ -688,6 +701,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .services {
     padding: 80px 15px;
 }
+
 
 
 /* ------------------------- SERVICES -------------------------- */
@@ -778,6 +792,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
 
 
 
@@ -954,6 +969,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
+
 
 
 
@@ -1290,6 +1306,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+
 /* ------------------------- BLOG -------------------------- */
 
 #blog-section {
@@ -1314,12 +1331,38 @@ body.mobile-nav-active #mobile-nav-toggle {
 #blog-section .blog-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 588px 588px;
-    grid-template-rows: 588px 588px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 400px 400px 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
     grid-gap: 15px;
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    #blog-section .blog-container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: 588px 588px 588px;
+        grid-template-rows: 588px 588px 588px;
+        grid-gap: 15px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 980px) {
+    #blog-section .blog-container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: 588px 588px;
+        grid-template-rows: 588px 588px;
+        grid-gap: 15px;
+        overflow: hidden;
+    }
 }
 
 #blog-section .blog-container .post {
@@ -1347,6 +1390,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 100%;
     transform: translate3d(0, -200px, 0);
     transition: all .4s ease-in-out;
+}
+
+#blog-section .blog-container .post:hover .details {
+    transform: translate3d(0, -588px, 0);
 }
 
 #blog-section .blog-container .post .details h4 {
@@ -1391,7 +1438,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     transform: translate3d(0, 40px, 0);
 }
 
-
+#blog-section .blog-container .post:hover .more .button {
+    color: #ff5253;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
 /* ------------------------- TESTIMONIALS -------------------------- */
 
